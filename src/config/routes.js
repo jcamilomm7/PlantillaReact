@@ -14,9 +14,19 @@ const routesAdmin = [
       } 
   ];
 
+  const routesUser = [
+    {
+      patch: "/",
+      component: Inicio ,
+    },
+    {
+        patch: "/registro",
+        component: Registro ,
+      } 
+  ];
 
 
-  const routes = [...routesAdmin];
+  const routes = [...routesAdmin,...routesUser];
   
   export default routes;
   
